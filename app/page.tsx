@@ -287,7 +287,7 @@ export default function HomePage() {
             </Card>
 
             {/* Mobile Health Map */}
-            <Card className="overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-xl">
+            {/* <Card className="overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-xl">
               <div className="aspect-video overflow-hidden">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-20%20at%2018.09.41-6RB6ksALCkQteQpgkCbH8VnD1feLH7.png"
@@ -312,7 +312,7 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
-            </Card>
+            </Card> */}
 
             {/* True Refrigeration */}
             <Card className="overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-xl">

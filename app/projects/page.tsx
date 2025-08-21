@@ -16,16 +16,16 @@ const projects = [
     liveUrl: "https://truerefrigeration.co.uk/",
     category: "Drupal",
   },
-  {
-    title: "Mobile Health Map",
-    description:
-      "Developed custom WordPress plugins with Gravity Forms and Advanced Custom Fields integration for healthcare mapping.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-20%20at%2018.09.41-6RB6ksALCkQteQpgkCbH8VnD1feLH7.png",
-    technologies: ["WordPress", "Gravity Forms", "ACF", "PHP"],
-    liveUrl: "https://www.mobilehealthmap.org/",
-    category: "WordPress",
-  },
+  // {
+  //   title: "Mobile Health Map",
+  //   description:
+  //     "Developed custom WordPress plugins with Gravity Forms and Advanced Custom Fields integration for healthcare mapping.",
+  //   image:
+  //     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-08-20%20at%2018.09.41-6RB6ksALCkQteQpgkCbH8VnD1feLH7.png",
+  //   technologies: ["WordPress", "Gravity Forms", "ACF", "PHP"],
+  //   liveUrl: "https://www.mobilehealthmap.org/",
+  //   category: "WordPress",
+  // },
   {
     title: "Securance",
     description:
