@@ -142,63 +142,59 @@ export default function ContactPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="name">Full Name</Label>
-                        <Input
-                          id="name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          placeholder="Your full name"
-                          required
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="email">Email Address</Label>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          placeholder="your.email@example.com"
-                          required
-                        />
-                      </div>
-                    </div>
-
+                <form
+                  action="https://formspree.io/f/mpwlgelk"
+                  method="POST"
+                  className="space-y-6"
+                >
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="subject">Subject</Label>
+                      <Label htmlFor="name">Full Name</Label>
                       <Input
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        placeholder="What's this about?"
+                        id="name"
+                        name="name"
+                        placeholder="Your full name"
                         required
                       />
                     </div>
-
                     <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Tell me about your project or how I can help you..."
-                        rows={6}
+                      <Label htmlFor="email">Email Address</Label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="your.email@example.com"
                         required
                       />
                     </div>
+                  </div>
 
-                    <Button type="submit" size="lg" className="w-full group">
-                      <Send className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                      Send Message
-                    </Button>
-                  </form>
+                  <div className="space-y-2">
+                    <Label htmlFor="subject">Subject</Label>
+                    <Input
+                      id="subject"
+                      name="subject"
+                      placeholder="What's this about?"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="Tell me about your project or how I can help you..."
+                      rows={6}
+                      required
+                    />
+                  </div>
+
+                  <Button type="submit" size="lg" className="w-full group">
+                    <Send className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
+                    Send Message
+                  </Button>
+                </form>
                 </CardContent>
               </Card>
             </div>
